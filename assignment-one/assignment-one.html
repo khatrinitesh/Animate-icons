@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<div id="div1" class="fa"></div>
+	<!-- <script type='text/javascript' src='js/jquery-1.12.0.min.js'></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+		});
+	</script> -->
+
+	<script>
+		function chargebattery() {
+		  var a;
+		  a = document.getElementById("div1");
+		  a.innerHTML = "&#xf244;";
+		  setTimeout(function () {
+		      a.innerHTML = "&#xf243;";
+		    }, 1000);
+		  setTimeout(function () {
+		      a.innerHTML = "&#xf242;";
+		    }, 2000);
+		  setTimeout(function () {
+		      a.innerHTML = "&#xf241;";
+		    }, 3000);
+		  setTimeout(function () {
+		      a.innerHTML = "&#xf240;";
+		    }, 4000);
+		}
+		chargebattery();
+		setInterval(chargebattery, 5000);
+	</script>
+</body>
+</html>
